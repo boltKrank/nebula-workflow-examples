@@ -10,7 +10,7 @@ steps:
 - name: slack-notify
   image: projectnebula/slack-notification:bf8ecb9
   spec:
-    apitoken:
+    apitoken: xoxp-426125542310-514210187202-726484984675-6679627cbec1ed2a311eb2bd0286b890
       $type: Secret
       name: slack-token
     channel: "#nebula-workflows"
