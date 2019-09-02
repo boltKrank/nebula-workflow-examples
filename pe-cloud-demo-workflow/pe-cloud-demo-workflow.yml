@@ -1,0 +1,9 @@
+version: v1
+description: A workflow to provision a demo environment in cloud
+variables: null
+steps:
+  - name: Step 1 - Provision Puppet Master server
+    description: "Using Terraform this will spin up a t2.large instance, download PE install then run the agent to finish config."
+    image: alpine:latest
+    input: 
+      - ping 54.66.149.230
